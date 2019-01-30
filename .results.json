@@ -1,0 +1,133 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 6,
+    "passes": 2,
+    "pending": 0,
+    "failures": 4,
+    "start": "2019-01-30T22:25:45.951Z",
+    "end": "2019-01-30T22:25:46.057Z",
+    "duration": 106
+  },
+  "tests": [
+    {
+      "title": "should use the componentDidMount lifecycle method to fetchCats",
+      "fullTitle": "<App/> should use the componentDidMount lifecycle method to fetchCats",
+      "duration": 7,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Expected the reducer to be a function.\n    at createStore (node_modules/redux/lib/redux.js:97:11)\n    at /Users/Omar/Development/code/5-mod/redux-thunk-lab-dumbo-web-102918/node_modules/redux/lib/redux.js:561:31\n    at createStore (node_modules/redux/lib/redux.js:93:33)\n    at Context.<anonymous> (test/app-component-test.js:46:17)",
+        "message": "Expected the reducer to be a function."
+      }
+    },
+    {
+      "title": "uses redux-promise to create an action object with type of \"FETCH_CATS\" and a payload of cat images when fetchCats is dispatched",
+      "fullTitle": "async actions uses redux-promise to create an action object with type of \"FETCH_CATS\" and a payload of cat images when fetchCats is dispatched",
+      "duration": 21,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Expected [ { type: 'FETCH_CATS', catPics: [ { url: 'www.example.com/cat1' }, { url: 'www.example.com/cat2' } ] } ] to equal [ { type: 'LOADING_CATS' }, { type: 'FETCH_CATS', payload: [ { url: 'www.example.com/cat1' }, { url: 'www.example.com/cat2' } ] } ]\n    at assert (node_modules/expect/lib/assert.js:29:9)\n    at Expectation.toEqual (node_modules/expect/lib/Expectation.js:81:30)\n    at /Users/Omar/Development/code/5-mod/redux-thunk-lab-dumbo-web-102918/test/cat-actions-test.js:33:36\n    at process.internalTickCallback (internal/process/next_tick.js:77:7)",
+        "message": "Expected [ { type: 'FETCH_CATS', catPics: [ { url: 'www.example.com/cat1' }, { url: 'www.example.com/cat2' } ] } ] to equal [ { type: 'LOADING_CATS' }, { type: 'FETCH_CATS', payload: [ { url: 'www.example.com/cat1' }, { url: 'www.example.com/cat2' } ] } ]",
+        "actual": "[\n  {\n    \"catPics\": [\n      {\n        \"url\": \"www.example.com/cat1\"\n      }\n      {\n        \"url\": \"www.example.com/cat2\"\n      }\n    ]\n    \"type\": \"FETCH_CATS\"\n  }\n]",
+        "expected": "[\n  {\n    \"type\": \"LOADING_CATS\"\n  }\n  {\n    \"payload\": [\n      {\n        \"url\": \"www.example.com/cat1\"\n      }\n      {\n        \"url\": \"www.example.com/cat2\"\n      }\n    ]\n    \"type\": \"FETCH_CATS\"\n  }\n]",
+        "showDiff": true
+      }
+    },
+    {
+      "title": "should display the cat pics wrapped in <img> tags",
+      "fullTitle": "<CatList/> should display the cat pics wrapped in <img> tags",
+      "duration": 11,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should have props catPics",
+      "fullTitle": "<CatList/> should have props catPics",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return the initial state",
+      "fullTitle": "cats reducer should return the initial state",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: (0 , _cats_reducer2.default) is not a function\n    at Context.<anonymous> (test/cats-reducer-test.js:7:7)",
+        "message": "(0 , _cats_reducer2.default) is not a function"
+      }
+    },
+    {
+      "title": "should handle the FETCH_CATS action",
+      "fullTitle": "cats reducer should handle the FETCH_CATS action",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: (0 , _cats_reducer2.default) is not a function\n    at Context.<anonymous> (test/cats-reducer-test.js:14:7)",
+        "message": "(0 , _cats_reducer2.default) is not a function"
+      }
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "should use the componentDidMount lifecycle method to fetchCats",
+      "fullTitle": "<App/> should use the componentDidMount lifecycle method to fetchCats",
+      "duration": 7,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Expected the reducer to be a function.\n    at createStore (node_modules/redux/lib/redux.js:97:11)\n    at /Users/Omar/Development/code/5-mod/redux-thunk-lab-dumbo-web-102918/node_modules/redux/lib/redux.js:561:31\n    at createStore (node_modules/redux/lib/redux.js:93:33)\n    at Context.<anonymous> (test/app-component-test.js:46:17)",
+        "message": "Expected the reducer to be a function."
+      }
+    },
+    {
+      "title": "uses redux-promise to create an action object with type of \"FETCH_CATS\" and a payload of cat images when fetchCats is dispatched",
+      "fullTitle": "async actions uses redux-promise to create an action object with type of \"FETCH_CATS\" and a payload of cat images when fetchCats is dispatched",
+      "duration": 21,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Expected [ { type: 'FETCH_CATS', catPics: [ { url: 'www.example.com/cat1' }, { url: 'www.example.com/cat2' } ] } ] to equal [ { type: 'LOADING_CATS' }, { type: 'FETCH_CATS', payload: [ { url: 'www.example.com/cat1' }, { url: 'www.example.com/cat2' } ] } ]\n    at assert (node_modules/expect/lib/assert.js:29:9)\n    at Expectation.toEqual (node_modules/expect/lib/Expectation.js:81:30)\n    at /Users/Omar/Development/code/5-mod/redux-thunk-lab-dumbo-web-102918/test/cat-actions-test.js:33:36\n    at process.internalTickCallback (internal/process/next_tick.js:77:7)",
+        "message": "Expected [ { type: 'FETCH_CATS', catPics: [ { url: 'www.example.com/cat1' }, { url: 'www.example.com/cat2' } ] } ] to equal [ { type: 'LOADING_CATS' }, { type: 'FETCH_CATS', payload: [ { url: 'www.example.com/cat1' }, { url: 'www.example.com/cat2' } ] } ]",
+        "actual": "[\n  {\n    \"catPics\": [\n      {\n        \"url\": \"www.example.com/cat1\"\n      }\n      {\n        \"url\": \"www.example.com/cat2\"\n      }\n    ]\n    \"type\": \"FETCH_CATS\"\n  }\n]",
+        "expected": "[\n  {\n    \"type\": \"LOADING_CATS\"\n  }\n  {\n    \"payload\": [\n      {\n        \"url\": \"www.example.com/cat1\"\n      }\n      {\n        \"url\": \"www.example.com/cat2\"\n      }\n    ]\n    \"type\": \"FETCH_CATS\"\n  }\n]",
+        "showDiff": true
+      }
+    },
+    {
+      "title": "should return the initial state",
+      "fullTitle": "cats reducer should return the initial state",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: (0 , _cats_reducer2.default) is not a function\n    at Context.<anonymous> (test/cats-reducer-test.js:7:7)",
+        "message": "(0 , _cats_reducer2.default) is not a function"
+      }
+    },
+    {
+      "title": "should handle the FETCH_CATS action",
+      "fullTitle": "cats reducer should handle the FETCH_CATS action",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: (0 , _cats_reducer2.default) is not a function\n    at Context.<anonymous> (test/cats-reducer-test.js:14:7)",
+        "message": "(0 , _cats_reducer2.default) is not a function"
+      }
+    }
+  ],
+  "passes": [
+    {
+      "title": "should display the cat pics wrapped in <img> tags",
+      "fullTitle": "<CatList/> should display the cat pics wrapped in <img> tags",
+      "duration": 11,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should have props catPics",
+      "fullTitle": "<CatList/> should have props catPics",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
